@@ -1,33 +1,56 @@
-# tama-river-client
+# tamariver
 
-タマリバのclient側の実装
+This code is the client-side code for tamariver.
 
-## requirements
+> **Note:** Currently, I am rebuilding this project by myself, so there is no backend.
 
-- node.js `v20.11.1`
+## Getting Started
 
-## 開発環境
+### Prerequisites
 
-### 初回起動
+- Node.js (version 20 or higher)
+- npm
 
-必要な要素をダウンロード
-```shell
-npm i
-```
+### Installation
 
-### 開発環境立ち上げ
+1. Clone the repository:
 
-next.js本体の開発環境立ち上げ
-```shell
-npm run dev
-```
+   ```bash
+   git clone https://github.com/minagishl/tamariver.git
+   ```
 
-storybook(コンポーネント確認UI)立ち上げ
-```shell
-npm run storybook
-```
+2. Navigate to the project directory:
 
-本番ビルド検証
-```shell
-npm run pages:preview
-```
+   ```bash
+   cd tamariver
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+### Scripts
+
+- **Build:** Build the application for production
+
+  ```bash
+  npm run build
+  ```
+
+- **Development:** Run the application in development mode with live reloading
+
+  ```bash
+  npm run dev
+  ```
+
+- **Format code:** Format the code using Prettier
+
+  ```bash
+  npm run format
+  ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
