@@ -1,6 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { SummaryCard, SummaryCardProp } from '@/components/common/SummaryCard';
-import sampleImageFile from '@/stories/assets/park.jpg';
+
+const image_url =
+  'https://raw.githubusercontent.com/minagishl/tamariver/refs/heads/main/src/stories/assets/park.jpg';
+
 const meta: Meta = {
   title: 'Common/SummaryCard',
   component: SummaryCard,
@@ -39,7 +42,7 @@ export const Mobile: StoryObj<typeof meta> = {
       sport: ['サッカー', '野球'],
       date: '2024-01-01T00:00:00Z',
       url: 'https://example.com',
-      image_url: sampleImageFile.src,
+      image_url: image_url,
       location: {
         name: '会場の名前',
         address: '住所',
@@ -58,7 +61,7 @@ export const Desktop: StoryObj<typeof meta> = {
       sport: ['サッカー', '野球'],
       date: '2024-01-01T00:00:00Z',
       url: 'https://example.com',
-      image_url: sampleImageFile.src,
+      image_url: image_url,
       location: {
         name: '会場の名前',
         address: '住所',
@@ -77,7 +80,7 @@ export const LoadingMobile: StoryObj<typeof meta> = {
       sport: ['サッカー', '野球'],
       date: '2024-01-01T00:00:00Z',
       url: 'https://example.com',
-      image_url: sampleImageFile.src,
+      image_url: image_url,
       location: {
         name: '会場の名前',
         address: '住所',
@@ -96,7 +99,7 @@ export const LoadingDesktop: StoryObj<typeof meta> = {
       sport: ['サッカー', '野球'],
       date: '2024-01-01T00:00:00Z',
       url: 'https://example.com',
-      image_url: sampleImageFile.src,
+      image_url: image_url,
       location: {
         name: '会場の名前',
         address: '住所',

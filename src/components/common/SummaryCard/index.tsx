@@ -6,9 +6,11 @@ import Link from 'next/link';
 import { Label } from '@/components/common/Label';
 import Favorite from '@/components/icons/Favorite';
 import { getFavorite, removeFavorite, setFavorite } from '@/model/localStorage';
-import SampleImage from '@/stories/assets/park.jpg';
 import { NoImage } from './NoImage';
 import { Card } from '@mui/material';
+
+const image_url =
+  'https://raw.githubusercontent.com/minagishl/tamariver/refs/heads/main/src/stories/assets/park.jpg';
 
 export type SummaryCardProp = {
   title: string;
@@ -54,7 +56,7 @@ function MobileSummaryCard(props: SummaryCardProps) {
                 prop.image_url ? (
                   // TODO: ちゃんとした画像が入るようにする
                   <Image
-                    src={SampleImage.src}
+                    src={image_url}
                     width={200}
                     height={200}
                     alt="photos"
@@ -114,7 +116,7 @@ function DesktopSummaryCard(props: SummaryCardProps) {
           <div className="relative m-1 h-20 w-28 overflow-hidden rounded bg-zinc-200"></div>
         ) : prop.image_url ? (
           <Image
-            src={SampleImage.src}
+            src={image_url}
             width={200}
             height={200}
             alt="photos"
